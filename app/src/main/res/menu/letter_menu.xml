@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_filter"
+        android:title="@string/others"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_more_vert">
+        <menu>
+            <group android:id="@+id/group"
+                android:checkableBehavior="single">
+            <item
+                android:id="@+id/future"
+                android:title="Future"
+                app:showAsAction="ifRoom"
+
+
+                />
+            <item
+                android:id="@+id/opened"
+                android:title="Opened"
+                app:showAsAction="ifRoom"
+               />
+            <item
+                android:id="@+id/all"
+                android:title="All"
+                app:showAsAction="ifRoom"
+                android:checked="true"
+                />
+
+            </group>
+            <item
+                android:id="@+id/settings"
+                android:title="@string/settings"
+                app:showAsAction="always"
+                android:iconTint="@color/white"
+                />
+        </menu>
+
+        </item>
+</menu>

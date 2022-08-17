@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.lettervaultpro.LetterViewModel" />
+        <variable
+            name="letter"
+            type="com.example.lettervaultpro.data.Letter" />
+        <variable
+            name="letterViewHolder"
+            type="com.example.lettervaultpro.adapter.LetterAdapter.LetterViewHolder" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="4dp"
+
+    >
+
+    <ImageView
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:onClick="@{() -> letterViewHolder.onClick(letter)}"
+        android:id="@+id/border"
+        android:layout_width="180dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background_shape"
+        android:contentDescription="border of image" />
+
+    <TextView
+        android:id="@+id/msg_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="2dp"
+        android:textSize="18sp"
+        android:text="@{letter.subject}"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/border"
+        app:layout_constraintTop_toTopOf="@id/border" />
+
+    <TextView
+        android:id="@+id/msg_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/border"
+        app:layout_constraintRight_toRightOf="@id/border"
+        app:layout_constraintTop_toBottomOf="@id/msg_subject" />
+    <TextView
+        android:id="@+id/unlock_msg"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/border"
+        app:layout_constraintRight_toLeftOf="@id/message_opening_img"
+        app:layout_constraintBottom_toBottomOf="@id/border"/>
+    <ImageView
+        android:id="@+id/key_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintRight_toRightOf="@id/border"
+        app:layout_constraintBottom_toBottomOf="@id/border"
+        app:layout_constraintLeft_toLeftOf="@id/border"
+        app:layout_constraintTop_toBottomOf="@id/msg_detail"
+        android:contentDescription="@string/lock" />
+
+    <ImageView
+        android:id="@+id/message_opening_img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_lock_open"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/lock"
+        app:layout_constraintBottom_toBottomOf="@id/border"
+        app:layout_constraintRight_toRightOf="@id/border"
+        app:layout_constraintLeft_toRightOf="@id/unlock_msg"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

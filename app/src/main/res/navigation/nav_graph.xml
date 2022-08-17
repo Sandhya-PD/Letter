@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.lettervaultpro.HomeFragment"
+        android:label="Letter Vault"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_letterFragment"
+            app:destination="@id/letterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_openMessage"
+            app:destination="@id/openMessage"
+            />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.lettervaultpro.MessageFragment"
+        android:label="Created"
+        tools:layout="@layout/fragment_message"
+        app:popUpTo="@+id/homeFragment"
+        app:popUpToInclusive="true">
+        <action
+            android:id="@+id/action_messageFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_messageFragment_to_letterFragment"
+            app:destination="@id/letterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/letterFragment"
+        android:name="com.example.lettervaultpro.LetterFragment"
+        android:label="Letter Vault" >
+        <action
+            android:id="@+id/action_letterFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+        <action
+            android:id="@+id/action_letterFragment_to_openMessage"
+            app:destination="@id/openMessage" />
+        <action
+            android:id="@+id/action_letterFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openMessage"
+        android:name="com.example.lettervaultpro.OpenMessage"
+        android:label="OpenMessage" >
+        <action
+            android:id="@+id/action_openMessage_to_letterFragment"
+            app:destination="@id/letterFragment" />
+
+        <argument
+            android:name="letterId"
+            app:argType="integer"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.lettervaultpro.SettingsFragment"
+        android:label="Settings" />
+</navigation>

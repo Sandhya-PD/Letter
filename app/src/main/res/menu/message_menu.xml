@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#000000"
+    >
+      <item
+        android:id="@+id/selected_time"
+        android:icon="@drawable/ic_baseline_access_time"
+        app:showAsAction="always"
+        android:title="@string/menulist" />
+    <item
+        android:id="@+id/finish"
+        android:title="@string/others"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_done"/>
+</menu>

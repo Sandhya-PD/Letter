@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <data>
+    <variable
+        name="viewModel"
+        type="com.example.lettervaultpro.LetterViewModel" />
+  </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:layout_margin="16dp"
+    >
+
+  <TextView
+      android:id="@+id/recent_letter_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="48dp"
+      android:text="@string/recent_letter"
+      android:textColor="#BDBABA"
+      app:layout_constraintHorizontal_bias="0.1"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/border"
+      android:layout_width="220dp"
+      android:layout_height="280dp"
+      android:layout_marginTop="20dp"
+      app:layout_constraintHorizontal_bias="0.437"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/recent_letter_txt"
+      android:src="@drawable/background_shape"
+      />
+
+    <TextView
+        android:id="@+id/msg_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="2dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/border"
+        app:layout_constraintTop_toTopOf="@id/border" />
+
+
+    <ImageView
+        android:id="@+id/key_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintRight_toRightOf="@id/border"
+        app:layout_constraintBottom_toBottomOf="@id/border"
+        app:layout_constraintLeft_toLeftOf="@id/border"
+        android:contentDescription="Lock" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

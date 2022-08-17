@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/LetterVaultpro/app/src/main/res/drawable-v24/add.xml" value="0.171" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/drawable-v24/ic_baseline_done.xml" value="0.304" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/drawable-v24/ic_sharp_close.xml" value="0.304" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/drawable/background_shape.xml" value="0.3445" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/layout/fragment_letter.xml" value="0.1" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/layout/fragment_message.xml" value="0.1" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/layout/fragment_open_message.xml" value="0.25" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/layout/list_view.xml" value="0.33" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/layout/settings.xml" value="0.3818359375" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/menu/letter_menu.xml" value="0.3546875" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/menu/message_menu.xml" value="0.1" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/menu/opened_message_menu.xml" value="0.3546875" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/xml/root_preferences.xml" value="0.1" />
+        <entry key="..\:/LetterVaultpro/app/src/main/res/xml/settings.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

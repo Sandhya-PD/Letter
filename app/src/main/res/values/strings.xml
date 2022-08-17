@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Letter Vault</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="add" translatable="false">add</string>
+    <string name="menulist" translatable="false">menulist</string>
+    <string name="others" translatable="false">others</string>
+    <string name="recent_letter" translatable="false">Recent Letter</string>
+    <string name="subject" translatable="false">Subject</string>
+    <string name="add_a_message" translatable="false">Add a message</string>
+    <string name="share" translatable="false">Share</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="add_message" translatable="false">Add Message</string>
+    <string name="lock" translatable="false">Lock</string>
+    <string name="settings" translatable="false">Settings</string>
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <string name="delete_dialog" translatable="false">Delete letter?</string>
+    <string name="cancel" translatable="false">Cancel</string>
+
+
+    <string name="ui" translatable="false">UI</string>
+    <string name="dark_mode" translatable="false">Night Mode</string>
+    <string name="dark_mode_def_value" translatable="false">MODE_NIGHT_FOLLOW_SYSTEM</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <string name="notification" translatable="false">notifications</string>
+    <string name="nofFound" translatable="false">No Letter found</string>
+</resources>

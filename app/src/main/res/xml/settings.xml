@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+            app:key="notifications_category"
+            app:title="Notifications">
+
+            <SwitchPreferenceCompat
+                app:key="@string/notification"
+                app:title="Reminder vault is ready to be opened."/>
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            app:key="mode_category"
+            app:title="">
+
+            <ListPreference
+                app:key="@string/dark_mode"
+                app:entries="@array/night_mode_entries"
+                app:entryValues="@array/night_mode_values"
+                app:summary="Select a dark or light theme"
+                app:title="@string/dark_mode"
+
+               />
+
+        </PreferenceCategory>
+
+    </PreferenceScreen>
